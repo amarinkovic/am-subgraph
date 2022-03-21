@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: MyMessenger
@@ -16,8 +16,8 @@ dataSources:
         - MyMessage
       abis:
         - name: MyMessenger
-          file: ./abis/MyMessenger.json
+          file: MyMessenger/abis/MyMessenger.json
       eventHandlers:
         - event: MyMessage(uint256,string)
           handler: handleMyMessage
-      file: ./src/mapping.ts
+      file: MyMessenger/MyMessenger.wasm
