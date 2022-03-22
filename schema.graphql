@@ -1,4 +1,4 @@
-type ExampleEntity @entity {
+type MyMessageEntity @entity {
   id: ID!
   count: BigInt!
   messageId: BigInt! # uint256

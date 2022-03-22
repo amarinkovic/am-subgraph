@@ -8,6 +8,7 @@ dataSources:
     source:
       address: "0xAcF94834F381873a4fFFfbAA867561D93Fc797ea"
       abi: MyMessenger
+      startBlock: 10365706
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
