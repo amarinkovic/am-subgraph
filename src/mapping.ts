@@ -13,9 +13,9 @@ export function handleMyMessage(event: MyMessage): void {
   contractEntity.count = contract.getCounter()
   contractEntity.save()
   
-  let msgEntity = MyMessageEntity.load(event.transaction.from.toHex())
+  let msgEntity = MyMessageEntity.load(event.params.messageId.toString())
   if(!msgEntity) {
-    msgEntity = new MyMessageEntity(event.transaction.from.toHex())
+    msgEntity = new MyMessageEntity(event.params.messageId.toString())
   }
   msgEntity.messageId = event.params.messageId
   msgEntity.message = event.params.message
