@@ -6,9 +6,9 @@ dataSources:
     name: MyMessenger
     network: rinkeby
     source:
-      address: "0xAcF94834F381873a4fFFfbAA867561D93Fc797ea"
+      address: "0x3f6098Bb89C3eC0F54022C0DF381FEf923505108"
       abi: MyMessenger
-      startBlock: 10365706
+      startBlock: 10371605
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5

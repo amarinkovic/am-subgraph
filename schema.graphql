@@ -1,6 +1,10 @@
 type MyMessageEntity @entity {
   id: ID!
-  count: BigInt!
   messageId: BigInt! # uint256
   message: String! # string
+}
+
+type ContractEntity @entity {
+  id: String!
+  count: BigInt! # uint256
 }
