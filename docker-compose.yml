@@ -19,7 +19,6 @@ services:
       ipfs: 'ipfs:5001'
       # Change next line if you want to connect to a different JSON-RPC endpoint
       ethereum: 'rinkeby:https://eth-rinkeby.alchemyapi.io/v2/2TVi3sg8wI4DeHgyVQmlm8GEHID7px3U'
-      ethereum_node: 'rinkeby:https://eth-rinkeby.alchemyapi.io/v2/2TVi3sg8wI4DeHgyVQmlm8GEHID7px3U'
       GRAPH_LOG: info
   ipfs:
     image: ipfs/go-ipfs:v0.4.23

@@ -1,4 +1,8 @@
-# Local Graph Node
+# Simple Subgraph Example
+
+This repository contains a dummy PoC demonstrating an implementation of a subgraph for a simple smart contract based on [The Graph](https://thegraph.com/), exposing the data as a GraphQL API.
+
+## Local Graph Node
 
 Run locally graph node with IPFS and Postgres in docker compose containers.
 
@@ -12,12 +16,14 @@ Tear it down
 docker-compose down && rm -rf ./data
 ```
 
-# Subgraph Deployment
+## Subgraph Deployment
 
 First off, you should generate the code based on your specs:
-```
+
+```shell
 yarn codegen
 ```
+
 This will create the bindings for the contract and it's events in the `generated` folder.
 
 After that you want to build the subgraph, to make sure your mapping scripts are correct.
@@ -53,7 +59,7 @@ deploy to localnode via npm/yarn:
 yarn deploy-local
 ```
 
-# Miscellaneous
+## Miscellaneous
 
 Check the size of the data folder
 
