@@ -96,3 +96,9 @@ Sample query for the `MyMessageEntity` run it on [GraphiQL](http://localhost:800
   }
 }
 ```
+
+Check the size of data folder:
+
+```shell
+du -hd1 data
+```
