@@ -1,0 +1,24 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: MyMessenger
+    network: rinkeby
+    source:
+      address: "0x3f6098Bb89C3eC0F54022C0DF381FEf923505108"
+      abi: MyMessenger
+      startBlock: 10371605
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - MyMessage
+      abis:
+        - name: MyMessenger
+          file: ./abis/MyMessenger.json
+      eventHandlers:
+        - event: MyMessage(uint256,string)
+          handler: handleMyMessage
+      file: ./src/mapping.ts
